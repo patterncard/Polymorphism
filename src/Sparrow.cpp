@@ -1,9 +1,20 @@
 #include <iostream>
+#include <cstring>
 #include "../include/Sparrow.h"
 
 using namespace std;
 
-void Sparrow::sing()
+Sparrow::Sparrow()
 {
-    cout << "CWIR CWIR! " << endl;
+    song = new char[10];
+    strcpy(song, "CWIR CWIR");
+}
+void Sparrow::sing()
+    {
+        cout << song << endl;
+    }
+
+Sparrow::~Sparrow()
+{
+    delete[] song;
 }

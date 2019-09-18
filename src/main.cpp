@@ -2,17 +2,15 @@
 #include "../include/Bird.h"
 #include "../include/Sparrow.h"
 #include "../include/Cuckoo.h"
+#include "../include/Rooster.h"
 
 using namespace std;
 
-class Rooster : public Bird
+    void simulateBirdSong(Bird &song)
 {
-public:
-    void sing()
-    {
-        cout << "KUKKURYKU! " << endl;
-    }
-};
+    song.sing();
+}
+
 int main()
 {
     Bird General;
@@ -32,6 +30,17 @@ int main()
 
     bird = &Small;
     bird->sing();
+
+    bird = &Round;
+    bird->sing;
+
+    bird = &Big;
+    bird->sing;
+
+    simulateBirdSong(General);
+    simulateBirdSong(Small);
+    simulateBirdSong(Round);
+    simulateBirdSong(Big);
 
     return 1;
 }

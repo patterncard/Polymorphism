@@ -9,8 +9,12 @@ using namespace std;
 
 class Rooster : public Bird
 {
+private:
+    char *song;
 public:
+    Rooster();
     void sing();
+    ~Rooster();
 };
 
 #endif
