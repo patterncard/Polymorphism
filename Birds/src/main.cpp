@@ -23,8 +23,6 @@ int main()
     Round.sing();
     Big.sing();
 
-    cout << "poinyterr" << endl;
-
     Bird *bird = &General;
     bird->sing();
 
